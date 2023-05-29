@@ -1,0 +1,31 @@
+{
+    "urls": [
+      {
+        "url": "https://book.qantas.com/qf-booking/dyn/air/booking/FFCO?SITE=QFQFQFBD&LANGUAGE=GB&TAB_ID=f5JXER4a9yICCIaruFgYqxkoyN2cduglGmdgzws6DP9Jug4zHvXo!1685336845006",
+        "elements": [
+        { "name": "Flight number", "selector": ".e2e-flight-number" },
+          { "name": "flight", "selector": ".summary" },
+          { "name": "time", "selector": ".departure-arrival-time" },
+          { "name": "price", "selector": ".amount" }
+        ],
+        "wrapper": ".upsell-container",
+        "rowWrapper": ".itinerary",
+        "includeChildText": false
+      },
+      {
+        "url": "https://book.virginaustralia.com/dx/VADX/#/flight-selection?ADT=1&CHD=0&INF=0&bookingType=flights&promoCode=&class=First&awardBooking=false&channel=&tbOption=0&pos=au-en&cmpid=&originPrice=&destinationPrice=&date=06-02-2023&activeMonth=06-02-2023&date1=07-07-2023&journeyType=round-trip&origin=ADL&destination=PER&origin1=PER&destination1=ADL&dxSlot=0",
+        "elements": [
+            { "name": "flight", "selector": ".summary" },
+            { "name": "start ", "selector": ".originTime" },
+            { "name": "end time", "selector": ".destintionTime" },
+            { "name": "duration", "selector": ".duration" },
+            { "name": "price", "selector": ".amount" }
+        ],
+        "wrapper": ".dxp-flight-table-section",
+        "rowWrapper": ".itinerary-part-offer-header",
+        "includeChildText": true
+      }
+    ],
+    "outputFile": "output.json",
+    "splitByUrl": false
+  }
